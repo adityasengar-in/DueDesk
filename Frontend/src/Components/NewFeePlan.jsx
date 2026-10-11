@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const API = "import.meta.env.VITE_API_URL/api";
+const API = import.meta.env.VITE_API_URL + "/api";
 
 function NewFeePlan() {
   const [name, setName] = useState("");

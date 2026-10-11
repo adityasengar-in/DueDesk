@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
-const API = "import.meta.env.VITE_API_URL/api";
-
+const API = import.meta.env.VITE_API_URL + "/api";
 const cache = {};
 
 function PlanDetail() {
