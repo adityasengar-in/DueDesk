@@ -46,7 +46,7 @@ async function runReminders() {
 
 // every day at 9:00 AM server time
 function startReminders() {
-  cron.schedule("0 9 * * *", runReminders);
+  cron.schedule("0 9 * * *", runReminders, { timezone: "Asia/Kolkata" });
 }
 
 module.exports = { startReminders, runReminders };
